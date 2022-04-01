@@ -1,17 +1,21 @@
-/* Set the width of the side navigation to 250px 
-and the left margin of the page content to 250px 
-and add a black background color to body */
+/* || functions */
+
+// 2020-04-01 added by miku abe
 function openNav() {
-    document.querySelector('#mysidenav').style.width = "250px";
-    document.querySelector('main').style.width = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    $('#mysidenav').width(250);
+    $('main').css('margin-left', '250px');
+    $('body').css('background-color', 'rgba(0,0,0,0.4)')
 }
 
-/* Set the width of the side navigation to 0 
-and the left margin of the page content to 0, 
-and the background color of body to white */
+// 2020-04-01 added by miku abe
 function closeNav() {
-    document.querySelector('#mysidenav').style.width = "0";
-    document.querySelector('main').style.width = "0";
-    document.body.style.backgroundColor = "#FEFAE0";
+    $('#mysidenav').width(0);
+    $('main').css('margin-left', '0px');
+    $('body').css('background-color', 'rgba(254,250,224,1)')
 }
+
+/* || Event Handlers */
+
+// 2020-04-01 added by miku abe
+$('.closenavbtn').on('click', closeNav)
+$('.opennavbtn').on('click', openNav)
