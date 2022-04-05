@@ -4,8 +4,98 @@ body{
     font-family: Frank Ruhl Libre,Georgia,serif;
     color: #353535;
     background-color: #FEFAE0;
+    /* jiyoung added April 3, 2022*/
+    display: grid;  
+    grid-template-areas: 
+            "topHeader topHeader topHeader topHeader",
+            "sideMenu mainNav mainNav mainNav",
+            "sideMenu content content content",
+            "sideMenu foot foot foot";
+    grid-template-columns : 1fr 1fr auto auto;
+    justify-content: space-between;
+    /* jiyoung added April 3, 2022 */
+
 }
 
+/* jiyoung added April 3,2022 */
+#topHeader > img {
+    width: 80px;
+    height: 80px;
+    float:left;
+    padding-left: 10px;
+}
+
+#topHeader > h1 {
+    float: left;
+    padding-left: 300px;
+}
+
+/* jiyoung added April 3, 2022 */
+#topHeader {
+    grid-area: topHeader;
+    margin-top: 10px;
+    border: 2px solid black;
+    width: 1000px;
+    height: 80px;
+    top:0px;
+    left:20px;
+    position: fixed;
+  
+}
+
+/* jiyoung added April 3, 2022 */
+#mainNav {
+    grid-area: mainNav;
+    width: 1000px;
+    height: 40px;
+    border: 3px solid red;   /*  test */
+    position:fixed;
+    top: 90px;
+    left:20px;
+    display: flex;   /*Menu options */
+    flex-direction:row;  /*Menu options */
+    justify-content:space-around;  /*Menu options */
+    background-color:rgb(232, 232, 25);  /* Navigation Background color*/
+}
+
+/* jiyoung added April 3, 2022 */
+#mainNav > a {
+    text-decoration: none;   /* delete underline on the menu oprions */
+    padding-top: 10px; 
+    color: rgb(59, 48, 3);
+    font-weight: bold;
+    
+}
+
+/* jiyoung Added April 3, 2022 */
+#contents {
+    grid-area : content;
+    width: 1000px;
+    height: auto;
+    border: 2px solid green; /* test */
+    top: 135px;
+    left: 20px;
+    position:fixed;
+}
+
+/* jiyoung Added April 3, 2022*/
+#foot {
+    grid-area: foot;
+    border: 2px solid blue; /* test */
+    width: 1000px;
+    height: auto;
+    position: fixed;
+    top: 340px;
+    left: 20px;
+    text-align: right;
+
+}
+
+/* jiyoung Added April 3, 2022
+footer {
+    grid-area: foot;
+
+} */
 
 
 /* || Typography */
@@ -16,6 +106,7 @@ body{
 
 /* The side navigation menu */
 .sidenav {
+    grid-area: sideMenu;  /* jiyoung added  April 3,2022*/
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
@@ -52,11 +143,12 @@ body{
     margin-left: 50px;
 }
 
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
+/* main {
+    /* transition: margin-left .5s;
+    padding: 20px; */
+/* } */
 
 
 
@@ -75,3 +167,4 @@ main {
 /*CSS for really wide screens*/
 @media (min-width: 1100px) {
 }
+
