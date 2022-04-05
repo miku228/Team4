@@ -4,41 +4,57 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="authur" content="Miku Abe">
+        <meta name="authur" content="Team4(Miku, Jiyoung, Shiki)">
         <meta name="email" content="abe00004@algonquinlive.com">
         <link rel="stylesheet" href="css/main.css">
-        <title>Document</title>
+        <title>Recipes Landing</title>
     </head>
     <body>
-        <header>
-            <nav id="mysidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closenavbtn">&times;</a>
-            <a href="index.html">HOME</a>
+        <header></header>
+        <div id="mySidenav" class="sidenav" >
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" >HOME</a>
+            <a href="korean.html" >Korean Recipes</a>
+            <a href="chinese.html">Chinese Recipes</a>
+            <a href="japanese.html">Japanese Recipes</a>
             <a href="loginout.html">Login/Logout</a>
             <a href="contactUs.html">Contact Us</a>
-            </nav>
-            <span class="opennavbtn">☰</span>
-            <a href="index.html">
-                <img src="images/Logo.png" alt="">
-            </a>
-        </header>
+        </div>
+        <main id="main" style="margin-left:0px;">
+            <div id="topHeader">
+                <img src="images/recipeLogo.jpg" alt="recipe website logo" title="referecned from https://www.vectorstock.com/royalty-free-vector/recipe-word-text-typography-design-logo-icon-vector-21127766" >
+                <h1>Recipe Books</h1>
+            </div>
+            <div id="mainNav">
+                <a href="javascript:void(0)" class="mainM" onclick="openNav()" >☰</a>
+                <a href="index.html" class="mainN">HOME</a>
+                <a href="korean.html" class="mainN">KOREAN RECIPES</a>
+                <a href="chinese.html" class="mainN">CHINESE RECIPES</a>
+                <a href="japanese.html" class="mainN">JAPANESE RECIPES</a>
+           </div>
+           <div  id="contents">
+               <!---Add recipes/: korean, japanese, chinese-->
 
-        <main id="main">
-            <!-- please modify h2 too -->
-            <h2>Landing Page</h2>
-
-        </main>
-        <footer>
-        <address>
-            123 Food Street<br>
-            Ottawa, Ontario
-        </address>
-            (613) 123-FOOD<br>
-            <a href="mailto: food@haveagoodfood.ca?subject=inquiry%20from%20website">
-                food@haveagoodfood.ca</a>
-
-        </footer>
-        <script src="scripts/jquery-3.6.0.min.js"></script>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div  id="footer">
+            <address>
+                123 Food Street<br>
+                Ottawa, Ontario
+            </address>
+                (613) 123-FOOD<br>
+                <a href="mailto: food@haveagoodfood.ca?subject=inquiry%20from%20website">
+                    food@haveagoodfood.ca</a>
+        </div>
+    </main>
         <script src="scripts/main.js"></script>
     </body>
 </html>
+
