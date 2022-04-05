@@ -1,0 +1,126 @@
+body{
+    margin:20px;
+    padding: 0;
+    text-align: center;
+}
+.container_grid{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: 100px 300px;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+}
+
+.gallery-items{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gallery-items .food_image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.gallery-items .food_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.gallery-items:hover .food_image img{
+    transform: scale(1.5);
+}
+
+.gallery-items .text{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(252, 255, 164);
+    font-family: fantasy;
+    font-size: 25px;
+    pointer-events: none;
+    z-index: 4;
+    transition:  .3s ease-in-out;
+    /* shiki:this is not working for all broswer, i tested it, it works for chrome and safari */
+    /* blur the background, stand out the text */
+    -webkit-backdrop-filter: blur(2px) saturate(1.8);
+    backdrop-filter: blur(2px) saturate(1.8);
+}
+
+.gallery-items:hover .text{
+    opacity: 1;
+    animation: move-down .3s linear;
+    padding: 1em;
+    width: 100%;
+}
+/* the animation for show the text get invloved */
+@keyframes move-down{
+
+    0%{
+        top: 10%;
+    }
+    50%{
+        top: 35%;
+    }
+    100%{
+        top: 50%;
+    }
+}
+/* make a column and row span for grid */
+.add_span_1 {
+    grid-column: span 1;
+}
+.add_span_2 {
+    grid-column: span 2;
+}
+.add_span_3{
+    grid-column: span 3;
+}
+.add_span_4{
+    grid-column: span 4;
+}
+.add_span_5{
+    grid-column: span 5;
+}
+.add_span_6{
+    grid-column: span 6;
+}
+
+.add_span_row_1 {
+    grid-row: span 1;
+}
+.add_span_row_2 {
+    grid-row: span 2;
+}
+.add_span_row_3 {
+    grid-row: span 3;
+}
+.add_span_row_4 {
+    grid-row: span 4;
+}
+.add_span_row_5 {
+    grid-row: span 5;
+}
+.add_span_row_6 {
+    grid-row: span 6;
+}
+
+/* grid for mobile view */
+@media screen and (max-width:500px){
+
+    .container_grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+/* fix the problem for grid span, so change the span to one here */
+    .add_span_1, .add_span_2, .add_span_3, .add_span_4, .add_span_5, .add_span_6{
+        grid-column: span 1;
+    }
+}
