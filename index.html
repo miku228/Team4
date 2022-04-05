@@ -7,61 +7,44 @@
         <meta name="authur" content="Team4(Miku, Jiyoung, Shiki)">
         <meta name="email" content="abe00004@algonquinlive.com">
         <link rel="stylesheet" href="css/main.css">
-        <title>Document</title>
+        <title>Recipes Landing</title>
     </head>
     <body>
-        <header>
-
-        </header>
-        <nav id="mysidenav" class="sidenav" >
+        <header></header>
+        <div id="mySidenav" class="sidenav" >
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">HOME</a>
-            <a href="korean.html">Korean Recipes</a>
+            <a href="index.html" >HOME</a>
+            <a href="korean.html" >Korean Recipes</a>
             <a href="chinese.html">Chinese Recipes</a>
             <a href="japanese.html">Japanese Recipes</a>
             <a href="loginout.html">Login/Logout</a>
             <a href="contactUs.html">Contact Us</a>
-        </nav>
-        <!-- <span onclick="openNav()">☰</span> -->
-
-        <main id="main">
-            <section>
-                <div id="topHeader">
-                    <img src="images/recipeLogo.jpg" alt="recipe website logo" title="referecned from https://www.vectorstock.com/royalty-free-vector/recipe-word-text-typography-design-logo-icon-vector-21127766" >
-                    <h1>Recipe Books</h1>
-                </div>
-<!-- jiyoung added April 3, 2022 -->
-                <div id="mainNav">
-                    <a href="javascript:void(0)"  onclick="openNav()" >☰</a>
-                    <a href="index.html">HOME</a>
-                    <a href="korean.html">KOREAN RECIPES</a>
-                    <a href="chinese.html">CHINESE RECIPES</a>
-                    <a href="japanese.html">JAPANESE RECIPES</a>
-
-               </div>
-               <div  id="contents">
-                fjadl;fjaldjfad
-                adsjflasjdfkakjdslf
-                jsdkfjalsdjkflads
-                asjdfklajsldfk
-                jsdkfl;asjdfklajsldfkasjdkflajsdklfjads
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-
-
+        </div>
+        <main id="main" style="margin-left:0px;">
+            <div id="topHeader">
+                <img src="images/recipeLogo.jpg" alt="recipe website logo" title="referecned from https://www.vectorstock.com/royalty-free-vector/recipe-word-text-typography-design-logo-icon-vector-21127766" >
+                <h1>Recipe Books</h1>
             </div>
+            <div id="mainNav">
+                <a href="javascript:void(0)" class="mainM" onclick="openNav()" >☰</a>
+                <a href="index.html" class="mainN">HOME</a>
+                <a href="korean.html" class="mainN">KOREAN RECIPES</a>
+                <a href="chinese.html" class="mainN">CHINESE RECIPES</a>
+                <a href="japanese.html" class="mainN">JAPANESE RECIPES</a>
+           </div>
+           <div  id="contents">
+               <!---Add recipes/: korean, japanese, chinese-->
 
-            </section>
-           
-            <!-- please modify h2 too -->
-
-        </main>
-        <footer  id="foot">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div  id="footer">
             <address>
                 123 Food Street<br>
                 Ottawa, Ontario
@@ -69,7 +52,9 @@
                 (613) 123-FOOD<br>
                 <a href="mailto: food@haveagoodfood.ca?subject=inquiry%20from%20website">
                     food@haveagoodfood.ca</a>
-        </footer>
+        </div>
+    </main>
         <script src="scripts/main.js"></script>
     </body>
 </html>
+
