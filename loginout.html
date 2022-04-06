@@ -7,11 +7,12 @@
     <meta name="authur" content="Miku Abe">
     <meta name="email" content="abe00004@algonquinlive.com">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/loginlogout.css">
     <title>Login / Logout</title>
 </head>
 <body>
     <header>
-        <nav id="mysidenav" class="sidenav">
+        <nav id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closenavbtn">&times;</a>
         <a href="index.html">HOME</a>
         <a href="loginout.html">Login/Logout</a>
@@ -26,12 +27,20 @@
     <main>
         <!-- please modify h2 too -->
         <h2>Login Logout</h2>
-        <form action="" id="login_form">
-            <input type="text" id="username" placeholder="username" autocomplete="false">
-            <input type="text" id="password" placeholder="password" autocomplete="false">
-            <button type="submit">Login</button>
+        <form id="loginform">
+            <section id="username">
+                <label for="username" class="label-name">Username</label>
+                <input type="text" name="username" autocomplete="off">
+                <span class="error"></span>
+            </section>
+            <section id="Password">
+                <label for="password" class="label-name">Password</label>
+                <input type="password" name="password" autocomplete="off">
+                <span class="error"></span>
+            </section>
+            <button id="login">Login</button>
         </form>
-
+        <button id="logout">Logout</button>
     </main>
     <footer>
       <address>
