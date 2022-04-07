@@ -20,6 +20,8 @@ function closeNav() {
 $('.closenavbtn').on('click', closeNav)
 $('.opennavbtn').on('click', openNav)
 
+// check the login status
+// 2020-04-06 added by abe
 if(sessionStorage.getItem('userlogin')) {
     $('#login_link').hide()
     $('#logout_link').show()
