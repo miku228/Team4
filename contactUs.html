@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="authur" content="Miku Abe">
+    <meta name="authur" content="Team4(Miku, Jiyoung, Shiki)">
     <meta name="email" content="abe00004@algonquinlive.com">
     <link rel="stylesheet" href="css/main.css">
-    <!-- <script src="scripts/formValidation.js" defer></script -->
+    <script src="scripts/formValidate.js" defer></script>
     <title>Contact Us</title>
+    
 </head>
 <body>
     <header>
@@ -25,45 +26,54 @@
     </header>
     
     <main>
-        <!-- please modify h2 too -->
-        <h2>Contact US</h2>
-        <!-- shiki created on April 7  -->
+        <section id="contents_top">
+            <h1>Contact US</h1>
+            <a href="loginout.html" id="login_status">
+                <span id="logout_link">logout</span>
+                <span id="login_link"> login</span>
+            </a>
+        </section>
+        <section>
+            <!-- shiki created on April 7  -->
         <div>
-            <form name='form 'action="" id="form"></form>
-            <table>
-                <tr>
-                    <td>
-                        <label for="name">Name</label>
-                        <br>
-                        <input type="text" id="name" name="name" value="">
-                        <br>
-                        <span class = 'errorRed' id="nameError"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="ContactPhone">Contact Phone</label>
-                        <br>
-                        <input type="text" id="ContactPhone" name="ContactPhone" value="">
-                        <br>
-                        <span class = 'errorRed' id="ContactPhoneError"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="comment">Send us a comment</label>
-                        <br>
-                        <textarea rows="6" cols="40" name="comment" form="form">Please write your comment here
-                        </textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="submit" value="Submit" class="button">
-                    </td>
-                </tr>
-            </table>
+            <form name="form" method ="get" action="" id="form">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name">Name</label>
+                            <br>
+                            <input type="text" id="name" name="name" value="">
+                            <br>
+                            <span class = 'errorRed' id="nameError"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="ContactPhone">Contact Phone</label>
+                            <br>
+                            <input type="text" id="ContactPhone" name="ContactPhone" value="">
+                            <br>
+                            <span class = 'errorRed' id="ContactPhoneError"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="comment">Send us a comment</label>
+                            <br>
+                            <textarea rows="6" cols="40" name="comment" form="form">Please write your comment here
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Submit" class="button">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            
         </div>
+        </section>
 
     </main>
     <footer>

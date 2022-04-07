@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="authur" content="Miku Abe">
+    <meta name="authur" content="Team4(Miku, Jiyoung, Shiki)">
     <meta name="email" content="abe00004@algonquinlive.com">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/loginlogout.css">
     <title>Login / Logout</title>
 </head>
 <body>
     <header>
-        <nav id="mysidenav" class="sidenav">
+        <nav id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closenavbtn">&times;</a>
         <a href="index.html">HOME</a>
         <a href="loginout.html">Login/Logout</a>
@@ -20,13 +21,27 @@
         <span class="opennavbtn">☰</span>
         <a href="index.html">
             <img src="images/Logo.png" alt="">
+            <h1>Recipe Books</h1>
         </a>
     </header>
     
     <main>
         <!-- please modify h2 too -->
         <h2>Login Logout</h2>
-
+        <form id="loginform">
+            <section id="username">
+                <label for="username" class="label-name">Username</label>
+                <input type="text" name="username" autocomplete="off">
+                <span class="error"></span>
+            </section>
+            <section id="Password">
+                <label for="password" class="label-name">Password</label>
+                <input type="password" name="password" autocomplete="off">
+                <span class="error"></span>
+            </section>
+            <button id="login">Login</button>
+        </form>
+        <button id="logout">Logout</button>
     </main>
     <footer>
       <address>
@@ -40,5 +55,6 @@
     </footer>
     <script src="scripts/jquery-3.6.0.min.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/loginlogout.js"></script>
 </body>
 </html>

@@ -1,0 +1,59 @@
+{
+    "Korean": [
+        { 
+            "name":"Japchae",
+            "pictureDir":"images/k_jabchae.jpg",
+            "page": "japchae.html",
+            "video": "https://youtu.be/R9OePUXtriE"
+            
+        },
+        {
+            "name":"Korean Fried Chicken(spicy)",
+            "pictureDir":"images/k_fried_chicken.jpg",
+            "page":"friedChicken.html",
+            "video": "https://www.youtube.com/watch?v=azTODcAdwqI"
+        },
+        {
+            "name":"Kimchi Soondubu Jjigae",
+            "pictureDir":"images/k_soon_doo_bu.jpg",
+            "page":"kimchiSoondubu.html",
+            "video": "https://youtu.be/SZr22jsLnCI"
+        }
+
+    ],
+    "Chinese": [
+        {
+            "name":"Shu Mai",
+            "pictureDir":"image/Cantonese-Shumai-Siu-Mai-3.jpg",
+            "page":"shuMai.html",
+            "video": "https://www.youtube.com/watch?v=y3Y4jNCyUKI"
+        },
+        {
+            "name":"Roast Duck",
+            "pictureDir":"image/cantonese-roast-duck.jpg",
+            "page":"roastDuck.html",
+            "video": "https://www.youtube.com/watch?v=ou8RVQLC7u4"
+        },
+        {
+            "name":"Braised Beef Stew",
+            "pictureDir":"images/Braised_Beef_Stew.jpg",
+            "page":"BraisedBeefStew.html",
+            "video": "https://www.youtube.com/watch?v=cm8a6ud-lxc"
+        }
+
+    ],
+    "Japanese": [
+        {
+            "name":"Chicken Curry",
+            "pictureDir":"image/Cantonese-Shumai-Siu-Mai-3.jpg",
+            "page":"ChickenCurry.html",
+            "video": "https://youtu.be/s57Yi10AB08"
+        },
+        {
+            "name":"Okonomiyaki",
+            "pictureDir":"image/cOkonomiyaki-Recipe-5681-II.jpg",
+            "page":"okonomiyaki.html",
+            "video": "https://youtu.be/Y33iFBt1_PA"
+        }
+    ]
+}
