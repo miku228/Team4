@@ -1,5 +1,3 @@
-// const genre = '';
-// const index = '';
 function getdata () {
     var genre = sessionStorage.getItem('genre');
     var index = sessionStorage.getItem("index");

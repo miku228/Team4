@@ -1,0 +1,48 @@
+/* for details only, created by shiki_chu on april 7 */
+
+.holdingcontainer{
+    width: 100%;
+    display: flex;
+
+    padding: 20px;
+    box-sizing: border-box;
+    /* change the internal container from horizontal to vertical, in mobile view */
+    flex-direction: row;
+
+}
+
+/* container to hold contents */
+.internalContainerLeft{
+    flex: 1;
+
+    text-align: left;
+}
+
+.internalContainerMiddle{
+    flex: 2;
+
+}
+
+.internalContainerRight{
+    flex: 1;
+    text-align: left;
+}
+img{
+    width: 380px;
+    box-shadow: 5px 10px 18px #888888;
+    border-radius: 10px;
+}
+h3{
+    text-align: center;
+}
+/* for the mobile view */
+@media screen and (max-width:768px) {
+    .holdingcontainer{
+        flex-direction: column;
+    }
+    img{
+        width: 280px;
+    }
+    
+}
+
