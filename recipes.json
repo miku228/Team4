@@ -36,7 +36,7 @@
         },
         {
             "name":"Braised Beef Stew",
-            "pictureDir":"images/Braised_Beef_Stew.jpg",
+            "pictureDir":"image/Braised_Beef_Stew.jpg",
             "page":"BraisedBeefStew.html",
             "video": "https://www.youtube.com/watch?v=cm8a6ud-lxc"
         }
