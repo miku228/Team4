@@ -1,3 +1,4 @@
+// 2021-04-07 write first js file by miku
 // get json data
 function populatexml() {
     const httpRequest = new XMLHttpRequest();

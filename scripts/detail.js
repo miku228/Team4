@@ -1,3 +1,4 @@
+// 2021-04-07 write first js file by miku
 function getdata () {
     var genre = sessionStorage.getItem('genre');
     var index = sessionStorage.getItem("index");
@@ -32,8 +33,27 @@ function populatexml(genre, index) {
 
 
 function setdetail(recipes, genre, index) {
-    let recipe = JSON.stringify(recipes[genre][index]);
-    $('#details').text(recipe)
+    // let st_recipe = JSON.stringify(recipes[genre][index]);
+    let recipe = recipes[genre][index];
+    let name = recipe['name'];
+    let pictureDir = recipe['pictureDir'];
+    let ing_lis = '';
+    let inst_lis = '';
+    // set ingredients
+    for(v of recipe['ingredients']){
+        console.log(v);
+        ing_lis += '<li>' + v + '</li>'
+    };
+    for(v of recipe['instructions']){
+        console.log(v);
+        inst_lis += '<li>' + v + '</li>'
+    };
+    $('.r_ingredients').children('ul').html(ing_lis);
+    $('.r_instructions').children('ol').html(inst_lis);
+    $('.r_photos').children('h3').text(name);
+    $('.r_photos').children('img').attr('src', pictureDir);
+    $('.r_photos').children('img').attr('alt', name);
+
 }
 
 getdata();

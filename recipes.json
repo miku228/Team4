@@ -4,20 +4,38 @@
             "name":"Japchae",
             "pictureDir":"image/k_jabchae.jpg",
             "page": "japchae.html",
-            "video": "https://youtu.be/R9OePUXtriE"
+            "video": "https://youtu.be/R9OePUXtriE",
+            "ingredients":[
+
+            ],
+            "instructions":[
+                
+            ]
             
         },
         {
             "name":"Korean Fried Chicken(spicy)",
             "pictureDir":"image/k_fried_checken.jpg",
             "page":"friedChicken.html",
-            "video": "https://www.youtube.com/watch?v=azTODcAdwqI"
+            "video": "https://www.youtube.com/watch?v=azTODcAdwqI",
+            "ingredients":[
+
+            ],
+            "instructions":[
+                
+            ]
         },
         {
             "name":"Kimchi Soondubu Jjigae",
             "pictureDir":"image/k_soon-doo-bu.jpg",
             "page":"kimchiSoondubu.html",
-            "video": "https://youtu.be/SZr22jsLnCI"
+            "video": "https://youtu.be/SZr22jsLnCI",
+            "ingredients":[
+
+            ],
+            "instructions":[
+                
+            ]
         }
 
     ],
@@ -26,19 +44,51 @@
             "name":"Shu Mai",
             "pictureDir":"image/Cantonese-Shumai-Siu-Mai-3.jpg",
             "page":"shuMai.html",
-            "video": "https://www.youtube.com/watch?v=y3Y4jNCyUKI"
+            "video": "https://www.youtube.com/watch?v=y3Y4jNCyUKI",
+            "ingredients":[
+                "1/2 pound 80% lean ground pork", 
+                "1/2 tablespoon sesame oil", 
+                "1 tablespoon minced ginger", 
+                "1 teaspoon sugar", 
+                "1/2 teaspoon white pepper", 
+                "25 to 30 thin round dumpling wrappers, preferably 3 1/4-inch diameter", 
+                "1/4 cup finely diced carrots", 
+                "1/2 pound shrimp", 
+                "1 1/2 tablespoons tapioca starch, can sub with cornstarch" ],
+            "instructions":[
+                "Place the ground pork into a mixing bowl. Add the tapioca starch and water to the bowl and start mixing everything together with a wooden spoon. Keep stirring for several minutes until the pork starts to turn into a paste-like consistency. This step helps to tenderize the ground pork.",
+                "Add the chopped water chestnuts, shiitake mushrooms, ginger, and scallions to the bowl with the pork and shrimp. Stir to combine. Then, add the oyster sauce, salt, sugar, and white pepper. Mix the ingredients until well incorporated",
+                "Take one dumpling wrapper and place it on your left hand. Place about 2 tablespoons of filling on the center of the wrapper. Shift the wrapper and filling so that it is laying on top of the crook of your left hand",
+                "Use your left hand to squeeze the dumpling together",
+                "Make sure to fill the dumpling all the way to the top (Photo 5). You don’t want to see any excess dumpling wrapper on the top because the dumplings will not look as nice when cooked",
+                "Place the filled dumpling on the counter and check to see if it stands upright without leaning over. If the dumpling is leaning, use your fingers to straighten it. Transfer the dumpling to your lined bamboo steamer or plate. Continue filling and shaping the dumplings until you run out of the filling",
+                "To cook the dumplings, cover the bamboo steamer with the lid. Fill a wok with water. It should cover about 2 ½ inches from the bottom of the wok",
+                "Let the dumplings cook for 7 to 8 minutes. You can stick a thermometer into a dumpling to see if the meat has reached 165ºF. Remove the steamer basket from the wok and serve."
+            ]
         },
         {
             "name":"Roast Duck",
             "pictureDir":"image/cantonese-roast-duck.jpg",
             "page":"roastDuck.html",
-            "video": "https://www.youtube.com/watch?v=ou8RVQLC7u4"
+            "video": "https://www.youtube.com/watch?v=ou8RVQLC7u4",
+            "ingredients":[
+
+            ],
+            "instructions":[
+
+            ]
         },
         {
             "name":"Braised Beef Stew",
             "pictureDir":"image/Braised_Beef_Stew.jpg",
             "page":"BraisedBeefStew.html",
-            "video": "https://www.youtube.com/watch?v=cm8a6ud-lxc"
+            "video": "https://www.youtube.com/watch?v=cm8a6ud-lxc",
+            "ingredients":[
+
+            ],
+            "instructions":[
+                
+            ]
         }
 
     ],
@@ -47,19 +97,131 @@
             "name":"Chicken Curry",
             "pictureDir":"image/Japanese-Chicken-Curry-3769-II.jpg",
             "page":"ChickenCurry.html",
-            "video": "https://youtu.be/s57Yi10AB08"
+            "video": "https://youtu.be/s57Yi10AB08",
+            "ingredients":[
+                "1½ lb boneless, skinless chicken thighs",
+                "¼ tsp kosher or sea salt",
+                "freshly ground black pepper",
+                "2 carrots",
+                "2 onions",
+                "3 Yukon gold potatoes",
+                "1 knob ginger",
+                "2 cloves garlic",
+                "½ apple",
+                "1½ Tbsp neutral-flavored oil (vegetable, rice bran, canola, etc.)",
+                "4 cups Chicken Stock/Broth",
+                "1 Tbsp honey",
+                "1 Tbsp soy sauce",
+                "1 Tbsp ketchup",
+                "1 package Japanese curry roux",
+                "2-4 tsp kosher or sea salt",
+                "cooked Japanese short-grain rice"
+            ],
+            "instructions":[
+                "Cut the onions into wedges. I like to have the texture of the onions in my curry, so I cut them into thick wedges. If you prefer, you can mince or thinly slice the onions so they disintegrate into the sauce.",
+                "Peel the carrots and cut them into rolling wedges (it's called rangiri in Japanese). This type of cut creates more surface area, which helps the carrots absorb more flavor and cook faster.",
+                "Peel the potatoes. Cut each potato into quarters (6 pieces for russet potatoes). Soak them in water for 15 minutes to remove excess starch.",
+                "Grate the ginger (I use this grater). You will need 1 tsp of grated ginger, including the juice. Mince the garlic and set aside",
+                "Cut the apple into quarters, remove the core, and peel the skin.",
+                "Grate the apple. My apple today is a lunchbox apple (smaller than regular), so I used the entire apple (yielded ½ cup or 120 ml grated apple). If your apple is regular size, use ½-¾ apple.",
+                "Cut off the extra fat from the chicken and discard it. Then cut the chicken into bite-sized pieces. I recommend cutting it diagonally (it's called sogigiri in Japanese) to create more surface area and flatten each piece so it cooks faster. Season with salt and pepper.",
+                "Heat the oil in a large pot over medium heat and add the onion.",
+                "Sauté the onions, stirring occasionally, until they become translucent and tender, about 5 minutes. Don't stir the onions too often because they won’t develop a golden color. Cooked onions add amazing flavor, so we do not want to skip this step.",
+                "Add the minced garlic (I pass it through a garlic press for a finer texture) and grated ginger and mix well together.",
+                "Add the chicken and cook, stirring frequently, until it's no longer pink on the outside. If the onions are getting too brown, reduce the heat to medium low temporarily.",
+                "Add the chicken stock. Alternatively, you can use water only or use half stock and half water if you're using store-bought curry roux, as it can be too salty. If you're using my homemade curry roux, you don't need to worry as it does not contain salt.",
+                "Add the grated apple, honey, soy sauce, and ketchup (or any condiment you choose to add). Please read my blog post for details.",
+                "Add the carrots and potatoes. The broth should barely cover the ingredients. Don't worry; we don't want too much liquid here, and additional liquid will be released from the meat and vegetables.",
+                "Simmer, covered*, on medium-low heat for 15 minutes, stirring occasionally. *Simmer uncovered if the ingredients are completely submerged in the broth",
+                "Once boiling, use a fine-mesh strainer to skim the scum and foam from the surface of the broth.",
+                "Continue to cook covered until a wooden skewer goes through the carrots and potatoes.",
+                "Turn off the heat. Put 1-2 cubes of roux in a ladleful of cooking liquid, slowly let it dissolve with a spoon or chopsticks, and stir into the pot to incorporate. Repeat with the rest of the blocks, 2 cubes at a time. ",
+                "Simmer, uncovered, on medium-low heat, stirring frequently, until the curry becomes thick, about 5-10 minutes. If your curry is too thick, you can add water to thin the sauce. When you stir, make sure that no roux or food is stuck to the bottom of the pot; otherwise, it may burn."                
+            ]
         },
         {
             "name":"Okonomiyaki",
             "pictureDir":"image/Okonomiyaki-Recipe-5681-II.jpg",
             "page":"okonomiyaki.html",
-            "video": "https://youtu.be/Y33iFBt1_PA"
+            "video": "https://youtu.be/Y33iFBt1_PA",
+            "ingredients":[
+                "1 cup all-purpose flour",
+                "¼ tsp kosher or sea salt",
+                "¼ tsp sugar",
+                "¼ tsp baking powder",
+                "5.6 oz nagaimo/yamaimo",
+                "¾ cup dashi",
+                "4 large eggs",
+                "½ cup tenkasu/agedama",
+                "1 head cabbage",
+                "½ lb sliced pork belly",
+                "neutral-flavored oil",
+                "1½ Tbsp sugar",
+                "2 Tbsp oyster sauce",
+                "4 Tbsp ketchup",
+                "3½ Tbsp Worcestershire sauce",
+                "Okonomiyaki Sauce",
+                "Japanese mayonnaise",
+                "katsuobushi"
+            ],
+            "instructions":[
+                "In a large bowl, combine all-purpose flour, salt, sugar, and baking powder and mix all together.",
+                "Peel and grate the nagaimo in a small bowl (I use this grater that I love). Note: I don't have any issues, but the nagaimo may irritate your skin and cause itchiness. Work quickly and rinse your hands immediately after touching the nagaimo. Nagaimo is very slimy and slippery, so make sure you have a good grip on the nagaimo if you wear kitchen gloves.",
+                "Add the grated the nagaimo and dashi to the bowl.",
+                "Mix it all together until combined. Cover the bowl with plastic wrap and let it rest in the refrigerator for at least one hour. Tip: Resting the batter relaxes the gluten in the batter, improves the flavor, and makes the okonomiyaki fluffier. Some okonomiyaki shops refrigerate the batter overnight. Meanwhile, you can prepare the okonomiyaki sauce and other ingredients.",
+                "Combine sugar, oyster sauce, ketchup, and Worcestershire sauce in a small bowl. Mix all together until the sugar is completely dissolved.",
+                "Discard the core of the cabbage and then mince the cabbage leaves.",
+                "Cut the pork belly slices in half and set aside.",
+                "After one hour, take out the batter from the refrigerator. Add eggs, tempura scraps (tenkasu/agedama), and pickled red ginger (kizami beni shoga) to the bowl. Mix until combined.",
+                "Add the minced cabbage to the batter, one-third of it at a time. Mix well before adding the rest.",
+                "In a large pan, heat the vegetable oil on medium heat. When the frying pan is hot (400ºF or 200ºC), spread the batter in a circle on the pan. We like thicker okonomiyaki (the final thickness is ¾ inches or 2 cm). If you’re new to making okonomiyaki, make it smaller and thinner so it’s easier to flip.",
+                "Place 2-3 slices of pork belly on top of the okonomiyaki and cook covered for 5 minutes.",
+                "When the bottom side is nicely browned, flip it over.",
+                "Gently press the okonomiyaki to fix its shape and keep it together. Cover and cook for another 5 minutes.",
+                "Flip it over one last time and cook uncovered for 2 minutes. If you’re going to cook the next batch, transfer the cooked okonomiyaki to a plate."
+                
+            ]
         },
         {
             "name":"Omurice",
             "pictureDir":"image/Omurice-Omelette-Rice.jpg",
             "page":"omurice.html",
-            "video": "https://www.youtube.com/watch?v=vF51LgSSpe0"
+            "video": "https://www.youtube.com/watch?v=vF51LgSSpe0",
+            "ingredients":[
+               "¼ onion",
+               "4 mushrooms",
+               "4 slices ham",
+               "1 Tbsp neutral-flavored oil",
+               "3 Tbsp green peas",
+               "⅛ tsp kosher or sea salt",
+               "⅛ tsp freshly ground black pepper",
+               "2 cups cooked Japanese short-grain rice",
+               "2 Tbsp unsalted butter",
+               "3 Tbsp ketchup",
+               "3 Tbsp tomato paste",
+               "2 Tbsp water",
+               "4 large eggs",
+               "2 Tbsp milk" 
+            ],
+            "instructions":[
+                "To make tomato sauce, combine ketchup, tomato paste, and water in a small saucepan and mix all together. Set aside.",
+                "Clean the mushrooms with damp towel and slice them.",
+                "Slice the onion and dice into small pieces.",
+                "Slice the onion and dice into small pieces.",
+                "In a 10-inch frying pan, heat 1 Tbsp vegetable oil and sauté onion.",
+                "Add green peas and mushrooms, and hams.",
+                "Season with pinch of kosher salt and freshly ground black pepper.",
+                "Add rice and break big chunks of rice into smaller pieces.",
+                "When combined well, add 3-4 Tbsp tomato sauce and mix well. Make sure to save some sauce for topping. Divide the fried rice in half.",
+                "Crack 2 eggs in a small bowl and add 1 Tbsp milk and pinch of salt. Whisk all together.",
+                "Heat another frying pan over medium high heat and add 1 Tbsp butter. Swirl around and when it’s melted, add the beaten egg.",
+                "Quickly swirl around with chopsticks. When the mixture is set but still runny, add half of ketchup rice in the middle. If you feel the pan is getting too hot, remove the pan from the heat and put on top of the damp towel.",
+                "Wrap the ketchup rice both sides with egg omelette. It doesn’t have to be perfectly wrapped, but make sure to create the “edge” around the fried rice with omelette.",
+                "Place the serving plate under the pan and flip the pan to transfer the omelette rice.",
+                "place a piece of paper towel and gently shape the omelettte into a football shape. Repeat this process to make the second omurice.",
+                "To serve, pour the tomato sauce over the Omurice. You can reheat the sauce or use room temperature sauce. Garnish the omurice with parsley. Enjoy!"
+                
+            ]
         }
     ]
 }
