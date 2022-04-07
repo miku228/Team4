@@ -7,11 +7,12 @@
     <meta name="authur" content="Miku Abe">
     <meta name="email" content="abe00004@algonquinlive.com">
     <link rel="stylesheet" href="css/main.css">
+    <!-- <script src="FormValidation.js" defer></script -->
     <title>Contact Us</title>
 </head>
 <body>
     <header>
-        <nav id="mysidenav" class="sidenav">
+        <nav id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closenavbtn">&times;</a>
         <a href="index.html">HOME</a>
         <a href="loginout.html">Login/Logout</a>
@@ -26,6 +27,38 @@
     <main>
         <!-- please modify h2 too -->
         <h2>Contact US</h2>
+        <!-- shiki created on April 7  -->
+        <div>
+            <form name='form 'action="" id="form"></form>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Name</label>
+                        <br>
+                        <input type="text" id="name" name="name" value="">
+                        <br>
+                        <span class = 'errorRed' id="nameError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ContactPhone">Contact Phone</label>
+                        <br>
+                        <input type="text" id="ContactPhone" name="ContactPhone" value="">
+                        <br>
+                        <span class = 'errorRed' id="ContactPhoneError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="comment">Send us a comment</label>
+                        <br>
+                        <textarea rows="6" cols="40" name="comment" form="form">Please write your comment here
+                        </textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
     </main>
     <footer>
