@@ -2,20 +2,20 @@
     "Korean": [
         { 
             "name":"Japchae",
-            "pictureDir":"images/k_jabchae.jpg",
+            "pictureDir":"image/k_jabchae.jpg",
             "page": "japchae.html",
             "video": "https://youtu.be/R9OePUXtriE"
             
         },
         {
             "name":"Korean Fried Chicken(spicy)",
-            "pictureDir":"images/k_fried_chicken.jpg",
+            "pictureDir":"image/k_fried_checken.jpg",
             "page":"friedChicken.html",
             "video": "https://www.youtube.com/watch?v=azTODcAdwqI"
         },
         {
             "name":"Kimchi Soondubu Jjigae",
-            "pictureDir":"images/k_soon_doo_bu.jpg",
+            "pictureDir":"image/k_soon-doo-bu.jpg",
             "page":"kimchiSoondubu.html",
             "video": "https://youtu.be/SZr22jsLnCI"
         }
@@ -45,15 +45,21 @@
     "Japanese": [
         {
             "name":"Chicken Curry",
-            "pictureDir":"image/Cantonese-Shumai-Siu-Mai-3.jpg",
+            "pictureDir":"image/Japanese-Chicken-Curry-3769-II.jpg",
             "page":"ChickenCurry.html",
             "video": "https://youtu.be/s57Yi10AB08"
         },
         {
             "name":"Okonomiyaki",
-            "pictureDir":"image/cOkonomiyaki-Recipe-5681-II.jpg",
+            "pictureDir":"image/Okonomiyaki-Recipe-5681-II.jpg",
             "page":"okonomiyaki.html",
             "video": "https://youtu.be/Y33iFBt1_PA"
+        },
+        {
+            "name":"Omurice",
+            "pictureDir":"image/Omurice-Omelette-Rice.jpg",
+            "page":"omurice.html",
+            "video": "https://www.youtube.com/watch?v=vF51LgSSpe0"
         }
     ]
 }
