@@ -27,9 +27,8 @@ function login(event) {
             console.log('correct')
             loginflag = true;
             sessionStorage.setItem('userlogin', 'true');
-            // $('#logout').show()
-            // $('#loginform').hide()
             location.reload()
+            // window.location.href = "index.html";
             return;
         }
     }

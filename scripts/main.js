@@ -5,9 +5,6 @@ function openNav() {
     $('#mySidenav').width(250);
     $('main').css('margin-left', '250px');
     $('body').css('background-color', 'rgba(0,0,0,0.4)')
-    // document.querySelector('#mySidenav').style.width = "200px";
-    // document.querySelector('#main').style.marginLeft = "200px";  /* jiyoung modified April 4,2022*/
-
 }
 
 // 2020-04-01 added by miku abe
@@ -23,7 +20,11 @@ function closeNav() {
 $('.closenavbtn').on('click', closeNav)
 $('.opennavbtn').on('click', openNav)
 
-    // document.querySelector('#mySidenav').style.width = "0";
-    // document.querySelector('#main').style.marginLeft = "0";  /* jiyoung modified April 4,2022*/
-// }
-
+if(sessionStorage.getItem('userlogin')) {
+    $('#login_link').hide()
+    $('#logout_link').show()
+    
+}else{
+    $('#login_link').show()
+    $('#logout_link').hide()
+}

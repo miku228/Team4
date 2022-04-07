@@ -4,15 +4,24 @@ body{
     font-family: Frank Ruhl Libre,Georgia,serif;
     color: #353535;
     background-color: #FEFAE0;
+    text-align: center;
     /* jiyoung added April 3, 2022*/
-    display: grid;
+    /* display: grid;
+    grid-template-rows: auto minmax(30px, 1fr) auto 2fr;
     grid-template-areas:
             "topHeader topHeader topHeader",
             "mainNav mainNav mainNav",
             "content content content",
-            "foot foot foot";
+            "foot foot foot"; */
     /* jiyoung added April 3, 2022 */
-
+}
+/* added by miku April 6 2022 */
+.grid-container {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  grid-gap: 5px;
+  padding: 5px;
+  justify-content: center;
 }
 
 /* jiyoung added April 3,2022 */
@@ -28,17 +37,37 @@ body{
 } */
 
 /* jiyoung added April 3, 2022 */
-#topHeader {
-    grid-area: topHeader;
+/* #topHeader { */
+header {
+    /* grid-area: topHeader; */
+    grid-row: 1 / 2; /* added by miku April 6 2022 */
     margin-top: 10px;
     border: 2px solid black;
     height: 80px;
+    position: relative;
+}
 
+header > span {
+  position: absolute;
+  left: 10px;
+  font-size: 2rem;
+}
+
+main {
+  /* grid-area: main; */
+  grid-row: 2 / 3; /* added by miku April 6 2022 */
+  display: grid;
+  grid-template-rows: minmax(30px, 1fr) auto ;
+  grid-gap: 5px;
+  padding: 5px;
+  justify-content: center;
+  border: 2px solid black;
 }
 
 /* jiyoung added April 3, 2022 */
 #mainNav {
-    grid-area: mainNav;
+    /* grid-area: mainNav; */
+    grid-row: 1 / 2; /* added by miku April 6 2022 */
     height: 40px;
     border: 3px solid red;   /*  test */
     display: flex;   /*Menu options */
@@ -58,13 +87,32 @@ body{
 
 /* jiyoung Added April 3, 2022 */
 #contents {
-    grid-area : content;
+    /* grid-area : contents; */
+    grid-row: 2 / 3;
     border: 2px solid green; /* test */
 }
 
+/* #contents_top {
+  display: grid;
+  grid-template-columns:auto 5px ;
+  grid-gap: 5px;
+  padding: 5px;
+  justify-content: center;
+} */
+
+/* #contents_top > h1 {
+  grid-column: 1 / 2;
+}
+
+#contents_top > a {
+  grid-column: 2 / 3;
+} */
+
 /* jiyoung Added April 3, 2022*/
-#footer {
-    grid-area: foot;
+/* #footer { */
+footer {
+    /* grid-area: foot; */
+    grid-row: 3 / 4; /* added by miku April 6 2022 */
     border: 2px solid blue; /* test */
     text-align: right;
 
@@ -85,6 +133,31 @@ footer {
 
 body {
   font-family: "Lato", sans-serif;
+}
+
+h1 {
+  float: left;
+  width: 90%;
+}
+
+#login_status {
+  text-decoration: none;
+  display: flex;
+  float: left;
+  width: 10%;
+ 
+}
+
+#logout_link, #login_link {
+  margin: 20px auto;
+  padding: 10px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid #f1e68fba;
+  background-color: #fdffd5;
 }
 
 .sidenav {

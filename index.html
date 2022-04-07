@@ -10,9 +10,9 @@
         <link rel="stylesheet" href="css/grid-landingPage.css">
         <title>Recipes Landing</title>
     </head>
-    <body>
-        <header></header>
-        <div id="mySidenav" class="sidenav" >
+    <body class="grid-container">
+        <nav id="mySidenav" class="sidenav">
+        <!-- <div id="mySidenav" class="sidenav" > -->
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html" >HOME</a>
             <a href="korean.html" >Korean Recipes</a>
@@ -20,14 +20,22 @@
             <a href="japanese.html">Japanese Recipes</a>
             <a href="loginout.html">Login/Logout</a>
             <a href="contactUs.html">Contact Us</a>
-        </div>
-        <main id="main" style="margin-left:0px;">
+        <!-- </div> -->
+        </nav>
+        <header>
             <div id="topHeader">
                 <img src="images/recipeLogo.jpg" alt="recipe website logo" title="referecned from https://www.vectorstock.com/royalty-free-vector/recipe-word-text-typography-design-logo-icon-vector-21127766" >
                 <h1>Recipe Books</h1>
             </div>
+
+        </header>
+        <main id="main" style="margin-left:0px;">
+            <!-- <div id="topHeader">
+                <img src="images/recipeLogo.jpg" alt="recipe website logo" title="referecned from https://www.vectorstock.com/royalty-free-vector/recipe-word-text-typography-design-logo-icon-vector-21127766" >
+                <h1>Recipe Books</h1>
+            </div> -->
             <div id="mainNav">
-                <a href="javascript:void(0)" class="mainM" onclick="openNav()" >☰</a>
+                <a href="javascript:void(0)" class="opennavbtn">☰</a>
                 <a href="index.html" class="mainN">HOME</a>
                 <a href="korean.html" class="mainN">KOREAN RECIPES</a>
                 <a href="chinese.html" class="mainN">CHINESE RECIPES</a>
@@ -35,8 +43,15 @@
            </div>
            <div  id="contents">
                <!---Add recipes/: korean, japanese, chinese-->
-               
-               <h1>Food Recipe</h1>
+               <section id="contents_top">
+                   <h1>Food Recipe</h1>
+                   <a href="loginout.html" id="login_status">
+                       <span id="logout_link">logout</span>
+                       <span id="login_link"> login</span>
+                   </a>
+               </section>
+
+
                <div class="container_grid">
    
                    <div class="gallery_container add_span_2 add_span_row_2 ">
@@ -121,18 +136,20 @@
                    </div>
                </div>
         </div>
-        <div  id="footer">
-            <address>
-                123 Food Street<br>
-                Ottawa, Ontario
-            </address>
-                (613) 123-FOOD<br>
-                <a href="mailto: food@haveagoodfood.ca?subject=inquiry%20from%20website">
-                    food@haveagoodfood.ca</a>
-        </div>
-    </main>
-        <script src="scripts/main.js"></script>
+        </main>
+        <footer>
+            <!-- <div  id="footer"> -->
+                <address>
+                    123 Food Street<br>
+                    Ottawa, Ontario
+                </address>
+                    (613) 123-FOOD<br>
+                    <a href="mailto: food@haveagoodfood.ca?subject=inquiry%20from%20website">
+                        food@haveagoodfood.ca</a>
+            <!-- </div> -->
+        </footer>
         <script src="scripts/jquery-3.6.0.min.js"></script>
+        <script src="scripts/main.js"></script>
     </body>
 </html>
 
