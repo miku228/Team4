@@ -1,6 +1,10 @@
 // 2022-04-07 write first js file by miku
 var recipes = {};
-// get json data
+// var sessionGenre;  //jiyoung April 8,2022
+// var sessoinIndex;  //jiyoung April 8,2022
+
+
+// get json data added by miku 2022-04-07
 function populatexml() {
   const httpRequest = new XMLHttpRequest();
   httpRequest.onreadystatechange = function() {
@@ -27,7 +31,7 @@ function populatexml() {
 }
 
 
-// get img tag to set image to each 9 item of them
+// get img tag to set image to each 9 item of them added by miku 2022-04-07
 function setgallery(obj){
     let recipes_obj = obj
     let imgsrc = '';
@@ -73,14 +77,19 @@ function setgallery(obj){
 
 populatexml()
 
-
+// when img is clicked set data to sessionStorage added by miku 2022-04-07
 $('.goto_detail').on('click', function(){
-    console.log($(this))
     let selsctedgenre = $(this).children('img').attr('data-genre');
     let selsctedindex = $(this).children('img').attr('data-index');
     // set selected item to session storage
     sessionStorage.setItem("genre", selsctedgenre);
     sessionStorage.setItem("index", selsctedindex);
+    
+    // redirect it doesn't work i cannot figure out the reason by miku 2022-04-08
+    // location.href = "detail.html"
+    // window.location.href = 'http://'+ window.location.host + '/detail.html';
+    // window.location.assign('http://'+ window.location.host + '/detail.html')
+    // setTimeout(function(){ window.location.href = "detail.html" }, 1000)
 })
 
 
@@ -112,13 +121,16 @@ function displayRecipes(e, country) {
         const anchor = document.createElement('a'); 
         anchor.setAttribute("href","detail.html");
         anchor.setAttribute("class","goto_detail");
-
+        // anchor.setAttribute("class","goto_detail_1");
+        // anchor.setAttribute("data-genre", country);  //modified April 8,2022 by jiyoung
+        // anchor.setAttribute("data-index", i);  //modified April 8,2022 by jiyoung
+        anchor.setAttribute("onclick", "sessionDataSend()");  //modified April 8, 2022 by jiyoung
        
        //image
         const img = document.createElement("img");
         img.setAttribute("src", e[i].pictureDir);
         img.setAttribute("alt", e[i].name +"Image");
-        img.setAttribute("class","pic goto_detail")
+        img.setAttribute("class","pic")
         img.setAttribute("data-genre", country)
         img.setAttribute("data-index", i)
         anchor.appendChild(img);  //add anchor to image
@@ -174,5 +186,19 @@ document.querySelector(".recipe-japanese").addEventListener("click", (e) => {
     e.preventDefault();
 }) ;
 
+//Sending grene and index into session storage when anchors on each recipe clicked
+//modified April 8, 2022 by jiyoung 
+function sessionDataSend() {
+  // var sessionD = document.querySelector("#displayRecipe-container > div a");
+  var sessionD = document.querySelector("#displayRecipe-container > div a img");
+  // console.log('sessionD',sessionD);
+  let selsctedgenre = sessionD.getAttribute('data-genre')
+  let selsctedindex = sessionD.getAttribute('data-index');
+  // console.log('selsctedgenre' ,selsctedgenre);
+  // console.log('selsctedindex', selsctedindex);
 
-
+  // set selected item to session storage
+  sessionStorage.setItem("genre", selsctedgenre);
+  sessionStorage.setItem("index", selsctedindex);
+  
+ }
