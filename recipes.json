@@ -6,10 +6,21 @@
             "page": "japchae.html",
             "video": "https://youtu.be/R9OePUXtriE",
             "ingredients":[
-
+                "7 ounces Korean potato starch noodles (dangmyeon, 당면)",
+                "1 carrot (about 3 ounces)",
+                "1/2 medium onion, preferably sweet variety, (4 to 5 ounces)",
+                "4 ounces lean tender beef (sirloin, chuck tender, rib eye, etc.) or pork loin",
+                "3 to 4 ounces fresh shiitake mushrooms",
+                "6 ounces fresh spinach (preferably a bunch of spinach)",
+                "oil for stir frying",
+                "egg garnish (jidan) - optional"      
             ],
             "instructions":[
-                
+                "Clean all the ingredients. Cut the carrot into matchsticks.",
+                "Remove the stems from the mushrooms, and slice into 1/4-inch thin strips.",
+                "Combine all the sauce ingredients in a small bowl and mix well until the sugar is dissolved.",
+                "In a large non-stick pan (see note 2), bring about 5 cups of water to a boil, and cook the noodles until completely translucent",
+                "Fill the same pan with 2 cups of water. When water boils, blanch the spinach only until wilted. "
             ]
             
         },
@@ -19,10 +30,23 @@
             "page":"friedChicken.html",
             "video": "https://www.youtube.com/watch?v=azTODcAdwqI",
             "ingredients":[
-
+                 "2 pounds chicken wings (about 16 drumettes and wingettes)",
+                 "1.5 teaspoons salt (use 1 ts if using table salt)",
+                 "pinch black pepper (or to taste)",
+                 "1 teaspoon grated ginger",
+                 "5-6 cups oil for frying about 2-inch deep",
+                 "1/2 cup potato starch (or cornstarch)", 
+                 "1/2 cup frying mix (aka tempura mix) ",
+                 "1/4 cup potato starch (or cornstarch)",
+                 "3/4 cup water"
             ],
             "instructions":[
-                
+                "Wash chicken wings, and drain thoroughly. Mix with the salt, pepper, and ginger. Let it sit for 2 hours or longer (overnight to 24 hours).",
+                "Combine all the sauce ingredients of your choice and stir well. Boil over medium heat until it thickens slightly, about 4 to 5 minutes. Turn the heat off.",
+                "rub it onto each wing well to coat evenly. Set aside.",
+                "Mix the wet batter ingredients in a bowl, and stir well until there are no visible lumps.",
+                "Fry them in two batches. Cook until lightly golden, about 6 minutes, depending on the size of the chicken wings. ",
+                "Reheat the oil to 350-360°F. Add the chicken (you can do this in one batch for the second frying), and deep fry again, for about 5 minutes"
             ]
         },
         {
@@ -31,10 +55,24 @@
             "page":"kimchiSoondubu.html",
             "video": "https://youtu.be/SZr22jsLnCI",
             "ingredients":[
-
+                " package 12 ounces sundubu (extra soft/silken tofu)",
+                "⅓ cup thinly sliced kimchi",
+                "3 ounces pork or beef",
+                "1 to 3 teaspoons red chili pepper flakes gochugaru add more for a spicier stew",
+                "1 teaspoon minced garlic",
+	            "1 tablespoon sesame oil use a little more if using more gochugaru",
+	            "1 cup water or anchovy broth See note",
+	            "2 to 3 tablespoons juice from kimchi",
+	            "1/2 teaspoon saewujeot (salted shrimp) or salt to taste",
+	            "pinch black pepper",
+	            "1 scallion, finely chopped",
+	            "1 egg - optional"
             ],
             "instructions":[
-                
+                "Cut the meat and kimchi into small thin strips. Add the kimchi, meat, red chili pepper flakes, garlic and sesame oil to a small pot, and place it over medium heat.",
+                "Stir-fry until the meat is almost cooked, 3 - 4 minutes.",
+                "Pour in water (or broth) and the juice from the kimchi. Bring it to a boil, and continue to boil for 3 - 4 minutes. Skim off the scum.",
+                "Add the soft tofu in big chunks. Stir in the salted shrimp or salt to taste (start with 1/4 teaspoon) and black pepper. Cook for 4 -5 minutes. Add the chopped"
             ]
         }
 

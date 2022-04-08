@@ -1,32 +1,35 @@
-// 2021-04-07 write first js file by miku
+// 2022-04-07 write first js file by miku
+var recipes = {};
 // get json data
 function populatexml() {
-    const httpRequest = new XMLHttpRequest();
-    httpRequest.onreadystatechange = function() {
-      if (httpRequest.readyState === XMLHttpRequest.DONE) {
-        // Everything is good, the response was received.
-        if (httpRequest.status === 200) {
-          const data = JSON.parse(httpRequest.responseText);
-        //   console.log(data)
-          setgallery(data)
-        } else {
-          // There was a problem with the request.
-          alert('There was a problem with the request.');
-        };
-  
+  const httpRequest = new XMLHttpRequest();
+  httpRequest.onreadystatechange = function() {
+    if (httpRequest.readyState === XMLHttpRequest.DONE) {
+      // Everything is good, the response was received.
+      if (httpRequest.status === 200) {
+        const data = JSON.parse(httpRequest.responseText);
+        recipes = data
+      //   console.log(data)
+        // setgallery(data)
+        setgallery(recipes)
       } else {
-          // Not ready yet.
+        // There was a problem with the request.
+        alert('There was a problem with the request.');
       };
+
+    } else {
+        // Not ready yet.
     };
-  
-    httpRequest.open('GET', '/recipes.json');
-    httpRequest.send();
-  }
+  };
+
+  httpRequest.open('GET', '/recipes.json');
+  httpRequest.send();
+}
+
 
 // get img tag to set image to each 9 item of them
 function setgallery(obj){
-    let recipes = obj
-    let images = $('.gallery-items .food_image').children();
+    let recipes_obj = obj
     let imgsrc = '';
     let imgalt = '';
     let imggenre = '';
@@ -36,18 +39,18 @@ function setgallery(obj){
         if(i < 3) {
             imggenre = 'Chinese';
             imgindex = i;
-            imgsrc = recipes[imggenre][i].pictureDir;
-            imgalt = recipes[imggenre][i].name;
+            imgsrc = recipes_obj[imggenre][i].pictureDir;
+            imgalt = recipes_obj[imggenre][i].name;
         }else if(i > 2 && i < 6) {
             imggenre = 'Korean';
             imgindex = i-3;
-            imgsrc = recipes[imggenre][imgindex].pictureDir;
-            imgalt = recipes[imggenre][imgindex].name;
+            imgsrc = recipes_obj[imggenre][imgindex].pictureDir;
+            imgalt = recipes_obj[imggenre][imgindex].name;
         }else if(i > 5 && i < 9) {
             imggenre = 'Japanese';
             imgindex = i - 6;
-            imgsrc = recipes[imggenre][imgindex].pictureDir; 
-            imgalt = recipes[imggenre][imgindex].name; 
+            imgsrc = recipes_obj[imggenre][imgindex].pictureDir; 
+            imgalt = recipes_obj[imggenre][imgindex].name; 
         }
         $(this).attr('src', imgsrc);
         $(this).attr('alt', imgalt);
@@ -58,11 +61,11 @@ function setgallery(obj){
     $('.gallery-items .food_name').each(function(i,v){
         let imgname = '';
         if(i < 3) {
-            imgname = recipes['Chinese'][i].name;
+            imgname = recipes_obj['Chinese'][i].name;
         }else if(i > 2 && i < 6) {
-            imgname = recipes['Korean'][i-3].name;
+            imgname = recipes_obj['Korean'][i-3].name;
         }else if(i > 5 && i < 9) {
-            imgname = recipes['Japanese'][i-6].name; 
+            imgname = recipes_obj['Japanese'][i-6].name; 
         }
         $(this).text(imgname)
     });
@@ -78,7 +81,98 @@ $('.goto_detail').on('click', function(){
     // set selected item to session storage
     sessionStorage.setItem("genre", selsctedgenre);
     sessionStorage.setItem("index", selsctedindex);
-    // redirect to detail.html
-    // location.href = "http://127.0.0.1:8887/detail.html";
-
 })
+
+
+//2022-04-05 added by Jiyoung Choi
+//Displaying recipe pictures for each country
+/******* functions for eventlisteners**********/
+
+
+//displaying recipe images in the landing page content
+function displayRecipes(e, country) {
+  const contentDiv = document.querySelector("#contents");
+  const displayRecipeDiv = document.createElement('div');
+  displayRecipeDiv.setAttribute("id","displayRecipe-container");  //recipe pictures container
+  contentDiv.append(displayRecipeDiv); 
+  const displayRecipe = document.querySelector("#displayRecipe-container");
+  
+  
+  //create displaying recipe titles
+   const recipeHeader = document.querySelector('#contents > h1');
+   recipeHeader.textContent = country + ' Food Recipe';
+
+ //Display pictures in #displayRecipe-container
+   for (let i =0 ; i < e.length ; i++) {
+       //create div element
+        const div = document.createElement("div");
+       // create <a> element
+       //  const anchor = document.createElement('a'); 
+       //  anchor.setAttribute("href",e[i].page);
+        const anchor = document.createElement('a'); 
+        anchor.setAttribute("href","detail.html");
+        anchor.setAttribute("class","goto_detail");
+
+       
+       //image
+        const img = document.createElement("img");
+        img.setAttribute("src", e[i].pictureDir);
+        img.setAttribute("alt", e[i].name +"Image");
+        img.setAttribute("class","pic goto_detail")
+        img.setAttribute("data-genre", country)
+        img.setAttribute("data-index", i)
+        anchor.appendChild(img);  //add anchor to image
+        div.append(anchor);
+       
+        //add content pictures in landing page content
+        displayRecipe.append(div);
+   }
+}
+
+/********* End of functions *********************/
+
+/******* Event Listner Sections *****************/
+
+//korean recipe menu clicked
+document.querySelector('.recipe-korean').addEventListener("click", (e) => {
+    //remove all the contents in the container 
+    $('.container_grid').empty();
+    let countDisplayContainer = document.querySelectorAll("#displayRecipe-container");
+    for ( let i=0; i < countDisplayContainer.length; i++) {
+       $('#displayRecipe-container').remove();
+    }
+    //get recipes info from recipes.json file
+    displayRecipes(recipes.Korean, "Korean");
+    e.preventDefault();
+}) ;
+
+
+//chinese recipe menu clicked
+document.querySelector('.recipe-chinese').addEventListener("click", (e) => {
+   //remove all the contents in the 
+   let countDisplayContainer = document.querySelectorAll("#displayRecipe-container");
+   $('.container_grid').empty();
+   for ( let i=0; i < countDisplayContainer.length; i++) {
+       $('#displayRecipe-container').remove();
+    }
+   //get recipes info from recipes.json file
+   displayRecipes(recipes.Chinese, "Chinese");
+   e.preventDefault();
+}) ;
+
+
+//japanese recipe menu clicked
+document.querySelector(".recipe-japanese").addEventListener("click", (e) => {
+    //remove all the contents in the 
+    let countDisplayContainer = document.querySelectorAll("#displayRecipe-container");
+    $('.container_grid').empty();
+    for ( let i=0; i < countDisplayContainer.length; i++) {
+       $('#displayRecipe-container').remove();
+    }
+    //get recipes info from recipes.json file
+    displayRecipes(recipes.Japanese, "Japanese");
+    e.preventDefault();
+}) ;
+
+
+

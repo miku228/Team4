@@ -1,4 +1,4 @@
-// 2021-04-07 write first js file by miku
+// 2022-04-07 write first js file by miku
 function getdata () {
     var genre = sessionStorage.getItem('genre');
     var index = sessionStorage.getItem("index");

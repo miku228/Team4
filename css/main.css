@@ -77,11 +77,12 @@ main {
 }
 
 /* jiyoung added April 3, 2022 */
-#mainNav > a {
+#mainNav > a, #displayRecipe-container > p {
     text-decoration: none;   /* delete underline on the menu oprions */
     padding-top: 10px;
     color: rgb(59, 48, 3);
     font-weight: bold;
+    text-align: left;
 
 }
 
@@ -118,6 +119,22 @@ footer {
 
 }
 
+/* displaying pictures in contents size */
+.pic {
+  width: 200px;
+  height: 200px;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* displaying pictures flex */
+#displayRecipe-container {
+display: flex;   /*Menu options */
+flex-direction:row;  /*Menu options */
+justify-content:space-around; /* Menu options*/
+padding-bottom : 100px;
+
+}
 /* jiyoung Added April 3, 2022
 footer {
     grid-area: foot;
@@ -135,7 +152,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-h1 {
+.h1-title {
   float: left;
   width: 90%;
 }
