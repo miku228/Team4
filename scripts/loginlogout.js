@@ -58,6 +58,17 @@ if(sessionStorage.getItem('userlogin')) {
     $('#logout').hide()
 }
 
-$('#login').on('click', login);
+
+function gotoGenre() {
+    $('.genre').on('click', function(){
+        let selsctedgenre = $(this).attr('class').split(" ")[0].split("-")[1];
+        // set selected item to session storage
+        sessionStorage.setItem("genre", selsctedgenre);
+      })
+}
+
+
+gotoGenre();
+$('#loginbtn').on('click', login);
 $('#logout').on('click', logout)
 

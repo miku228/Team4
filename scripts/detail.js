@@ -1,10 +1,10 @@
 // 2022-04-07 write first js file by miku
-function getdata () {
+function getdata() {
     var genre = sessionStorage.getItem('genre');
     var index = sessionStorage.getItem("index");
   
-    console.log(genre);
-    console.log(index); 
+    // console.log(genre);
+    // console.log(index); 
   
     //clear session strage
     sessionStorage.clear();
@@ -27,7 +27,7 @@ function populatexml(genre, index) {
       };
     };
   
-    httpRequest.open('GET', '/recipes.json');
+    httpRequest.open('GET', '../Team4/recipes.json');
     httpRequest.send();
 }
 

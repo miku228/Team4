@@ -2,7 +2,7 @@
     "Korean": [
         { 
             "name":"Japchae",
-            "pictureDir":"image/k_jabchae.jpg",
+            "pictureDir":"images/k_jabchae.jpg",
             "page": "japchae.html",
             "video": "https://youtu.be/R9OePUXtriE",
             "ingredients":[
@@ -26,7 +26,7 @@
         },
         {
             "name":"Korean Fried Chicken(spicy)",
-            "pictureDir":"image/k_fried_checken.jpg",
+            "pictureDir":"images/k_fried_checken.jpg",
             "page":"friedChicken.html",
             "video": "https://www.youtube.com/watch?v=azTODcAdwqI",
             "ingredients":[
@@ -51,7 +51,7 @@
         },
         {
             "name":"Kimchi Soondubu Jjigae",
-            "pictureDir":"image/k_soon-doo-bu.jpg",
+            "pictureDir":"images/k_soon-doo-bu.jpg",
             "page":"kimchiSoondubu.html",
             "video": "https://youtu.be/SZr22jsLnCI",
             "ingredients":[
@@ -80,7 +80,7 @@
     "Chinese": [
         {
             "name":"Shu Mai",
-            "pictureDir":"image/Cantonese-Shumai-Siu-Mai-3.jpg",
+            "pictureDir":"images/Cantonese-Shumai-Siu-Mai-3.jpg",
             "page":"shuMai.html",
             "video": "https://www.youtube.com/watch?v=y3Y4jNCyUKI",
             "ingredients":[
@@ -106,7 +106,7 @@
         },
         {
             "name":"Roast Duck",
-            "pictureDir":"image/cantonese-roast-duck.jpg",
+            "pictureDir":"images/cantonese-roast-duck.jpg",
             "page":"roastDuck.html",
             "video": "https://www.youtube.com/watch?v=ou8RVQLC7u4",
             "ingredients":[
@@ -137,7 +137,7 @@
         },
         {
             "name":"Braised Beef Stew",
-            "pictureDir":"image/Braised_Beef_Stew.jpg",
+            "pictureDir":"images/Braised_Beef_Stew.jpg",
             "page":"BraisedBeefStew.html",
             "video": "https://www.youtube.com/watch?v=cm8a6ud-lxc",
             "ingredients":[
@@ -168,7 +168,7 @@
     "Japanese": [
         {
             "name":"Chicken Curry",
-            "pictureDir":"image/Japanese-Chicken-Curry-3769-II.jpg",
+            "pictureDir":"images/Japanese-Chicken-Curry-3769-II.jpg",
             "page":"ChickenCurry.html",
             "video": "https://youtu.be/s57Yi10AB08",
             "ingredients":[
@@ -214,7 +214,7 @@
         },
         {
             "name":"Okonomiyaki",
-            "pictureDir":"image/Okonomiyaki-Recipe-5681-II.jpg",
+            "pictureDir":"images/Okonomiyaki-Recipe-5681-II.jpg",
             "page":"okonomiyaki.html",
             "video": "https://youtu.be/Y33iFBt1_PA",
             "ingredients":[
@@ -257,7 +257,7 @@
         },
         {
             "name":"Omurice",
-            "pictureDir":"image/Omurice-Omelette-Rice.jpg",
+            "pictureDir":"images/Omurice-Omelette-Rice.jpg",
             "page":"omurice.html",
             "video": "https://www.youtube.com/watch?v=vF51LgSSpe0",
             "ingredients":[

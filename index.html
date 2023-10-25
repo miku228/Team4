@@ -6,52 +6,72 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="authur" content="Team4(Miku, Jiyoung, Shiki)">
         <meta name="email" content="abe00004@algonquinlive.com">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/grid-landingPage.css">
         <title>Recipes Landing</title>
     </head>
     <body class="grid-container">
-        <nav id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <input type="checkbox" id="drawer">
+        <label for="drawer" class="open"><span></span></label>
+        <label for="drawer" class="close" id="closeNav"></label>
+        <nav class="menu">
+            <h2>menu</h2>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="" class = "hum-recipe-korean" >KOREAN RECIPES</a></li>
+                <li><a href="index.html" class = "hum-recipe-chinese" >CHINESE RECIPES</a></li>
+                <li><a href="index.html" class = "hum-recipe-japanese" >JAPANESE RECIPES</a></li>
+                <li><a href="loginout.html">Login/Logout</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <section id="login">
+            <a href="loginout.html" id="login_status">
+                <span id="logout_link">logout</span>
+                <span id="login_link"> login</span>
+            </a>
+        </section>
+        <!-- <nav id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closenavbtn" onclick="closeNav()">&times;</a>
             <a href="index.html" >HOME</a>
             <a href="loginout.html">Login/Logout</a>
             <a href="contactUs.html">Contact Us</a>
-        </nav>
+        </nav> -->
         <header>
             <div id="topHeader">
-                <img src="images/recipeLogo.jpg" alt="recipe website logo" title="referecned from https://www.vectorstock.com/royalty-free-vector/recipe-word-text-typography-design-logo-icon-vector-21127766" >
-                <h1>Recipe Books</h1>
+                <!-- <img src="images/recipeLogo.jpg" alt="recipe website logo" title="referecned from https://www.vectorstock.com/royalty-free-vector/recipe-word-text-typography-design-logo-icon-vector-21127766" > -->
+                <h1><a href="index.html" class="title">Recipe Books</a></h1>
             </div>
 
         </header>
         <main id="main" style="margin-left:0px;">
 
             <div id="mainNav">
-                <a href="javascript:void(0)" class="opennavbtn">☰</a>
+                <!-- <a href="javascript:void(0)" class="opennavbtn" onclick="openNav()">☰</a> -->
                 <a href="index.html" class="mainN">HOME</a>
-                <!-- jiyoung added April 6,2022-->
-                <a href="#" class = "recipe-korean" >KOREAN RECIPES</a>   
-                <a href="#" class = "recipe-chinese" >CHINESE RECIPES</a>
-                <a href="#" class = "recipe-japanese" >JAPANESE RECIPES</a>
+                <a href="" class = "recipe-korean" id="recipe-korean" >KOREAN RECIPES</a>   
+                <a href="" class = "recipe-chinese" id="recipe-chinese">CHINESE RECIPES</a>
+                <a href="" class = "recipe-japanese" id="recipe-japanese">JAPANESE RECIPES</a>
            </div>
            <div  id="contents">
-               <!---Add recipes/: korean, japanese, chinese-->
                <h1 class="h1-title"></h1>
-               <section id="contents_top">
+               <!-- <section id="contents_top">
                    <a href="loginout.html" id="login_status">
                        <span id="logout_link">logout</span>
                        <span id="login_link"> login</span>
                    </a>
-               </section>
+               </section> -->
 
-
+               <!-- recipe pictures 2x5 -->
                <div class="container_grid">
    
                    <div class="gallery_container add_span_2 add_span_row_2 ">
                        <div class="gallery-items">
                            <div class="food_image">
                                <a href="detail.html" class="goto_detail">
-                               <!-- <a href="" class="goto_detail"> -->
                                    <img>
                                </a>
                            </div>
@@ -80,7 +100,6 @@
                            <div class="text food_name"></div>
                        </div>
                    </div>
-   <!-- rondom photos here -->
                    <div class="gallery_container add_span_3">
                        <div class="gallery-items">
                            <div class="food_image">
@@ -102,7 +121,6 @@
                            <div class="text food_name"></div>
                        </div>
                    </div>
-   <!-- random photos here -->
                    <div class="gallery_container add_span_2 add_span_row_3">
                        <div class="gallery-items">
                            <div class="food_image">

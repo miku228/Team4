@@ -30,18 +30,39 @@ function validateform(event){
 };
 
 
-// event : 
-  document.form.addEventListener("submit", validateform);
+// // event : 
+//   document.form.addEventListener("submit", validateform);
   
-  // remove error message
-  document.querySelector('#name').addEventListener("blur", function(){
-      if(this.value !== ""){
-        nameError.textContent = "";
-      }
-});
+// // remove error message
+//   document.querySelector('#name').addEventListener("blur", function(){
+//       if(this.value !== ""){
+//         nameError.textContent = "";
+//       }
+//   });
 
-  document.querySelector('#ContactPhone').addEventListener("blur", function(){
-    if(this.value !== ""){
-      ContactPhoneError.textContent = "";
-    }
+//   document.querySelector('#ContactPhone').addEventListener("blur", function(){
+//     if(this.value !== ""){
+//       ContactPhoneError.textContent = "";
+//     }
+//   });
+
+
+document.contactForm.elements[3].addEventListener('click', function() {
+ //check each item is filled
+  let name = document.contactForm.elements[0].value;
+  let mail = document.contactForm.elements[1].value;
+  let comment = document.contactForm.elements[2].value;
+
+  if(name == "") {
+    console.log("Name is empty!ERROR!!!");
+  } else if(mail == "") {
+    console.log("Mail is empty!ERROR!!!");
+  } else if(comment == "") {
+    console.log("Comment is empty!ERROR!!!");
+  } else {
+    console.log("Contact form is submitted!!!")
+  }
+
+  
+
 });

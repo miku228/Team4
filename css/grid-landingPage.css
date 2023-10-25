@@ -4,7 +4,7 @@ body{
     padding: 0;
     text-align: center;
 }
-.container_grid{
+.container_grid, #displayRecipe-container{
     clear: both;
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -118,7 +118,7 @@ body{
 /* grid for mobile view */
 @media screen and (max-width:500px){
 
-    .container_grid{
+    .container_grid, #displayRecipe-container{
         grid-template-columns: repeat(2,1fr);
     }
 /* fix the problem for grid span, so change the span to one here */
